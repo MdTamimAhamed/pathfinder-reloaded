@@ -3,9 +3,9 @@ const DashboardHeader = () => {
   return (
     <div className="bg-secondary">
         <div className="min-[320px]:flex justify-between items-center max-w-[1920px]  mx-auto px-20">
-          <div className=" [&>*]:text-primary font-bold py-4">
-              <h3>Pathfinder</h3>
-              <h3 className="pl-5">Reloaded</h3>
+          <div className=" [&>*]:text-primary py-4">
+              <h3 className='font-bold text-2xl'>Pathfinder</h3>
+              <h3 className="text-base tracking-[.5rem]">Reloaded</h3>
           </div>
 
           <div className="profile">
