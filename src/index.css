@@ -6,6 +6,6 @@
 /* Custom css gose here */
 @layer base{
     html{
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', 'Roboto',sans-serif;
     }
 }
