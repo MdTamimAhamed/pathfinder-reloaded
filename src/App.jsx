@@ -1,25 +1,29 @@
-import './App.css';
-import { BrowserRouter as Router} from 'react-router-dom';
-import DashboardHeader from './components/dashboard-index/DashboardHeader';
-import SideBar from './components/dashboard-index/SideBar';
-import DashboardMain from './components/dashboard-index/DashboardMain';
-import { useState } from 'react';
+import React from 'react'
+import Dashboard from './components/app-home/Dashboard'
+import ScoresMain from './components/app-pages/ScoresMain'
+import JournalMain from './components/app-pages/JournalMain'
+import EmployeesMain from './components/app-pages/EmployeesMain'
+import CompanyProfile from './components/app-pages/CompanyProfile'
+import PersonalProfile from './components/app-pages/PersonalProfile'
+import LoginOrSignup from './components/login-or-signup/LoginOrSignup'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-function App() {
-  const[title, setTitle] = useState('');
+const App = () => {
   return (
     <>
-        <div className='app-body'>
-          <Router>
-              <DashboardHeader />
-              <div className='flex justify-between'>
-                <SideBar setTitle = {setTitle}/>
-                <DashboardMain title = {title}/>
-              </div>  
-          </Router>
-        </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/login-signup' element={<LoginOrSignup/>}/>
+          <Route path='/' element={<Dashboard />}/>
+          <Route path='/score' element={<ScoresMain />}/>
+          <Route path='/journal' element={<JournalMain />}/>
+          <Route path='/employees' element={<EmployeesMain />}/>
+          <Route path='/company-profile' element={<CompanyProfile/>}/>
+          <Route path='/personal-profile' element={<PersonalProfile />}/>
+        </Routes>
+      </BrowserRouter>
     </>
-  );
+  )
 }
 
 export default App;
