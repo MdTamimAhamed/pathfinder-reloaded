@@ -8,8 +8,9 @@ const DashboardHeader = () => {
               <h3 className="text-base font-normal tracking-[.5rem]">Reloaded</h3>
           </div>
 
-          <div className="profile">
-            <img className='w-10 h-10 rounded-full 'src={Image} alt='profile'/>
+          <div className="profile flex items-center">
+            <span className='pr-3'>User Name</span>
+            <img className='w-10 h-10 rounded-full cursor-pointer 'src={Image} alt='profile'/>
           </div>
         </div>
     </div>
