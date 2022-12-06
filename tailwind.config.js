@@ -11,7 +11,9 @@ module.exports = {
       secondary: '#f7f6fd',
       darker: '#433737',
       white:'#FFFFFF',
-      active:'#C84545'
+      active:'#C84545',
+      grayFill: '#eeeeee',
+      grayBorder: '#dddddd'
     }
   },
   plugins: [],

@@ -1,4 +1,6 @@
-import React from 'react'
+import LoginOption from './components/login-option/LoginOption'
+import SignupOption from './components/signup-option/SignupOption'
+import LoginIndividual from './components/login/LoginIndividual'
 import Dashboard from './components/app-home/Dashboard'
 import ScoresMain from './components/app-pages/ScoresMain'
 import JournalMain from './components/app-pages/JournalMain'
@@ -14,6 +16,11 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path='/login-signup' element={<LoginOrSignup/>}/>
+          <Route path='/login-option' element={ <LoginOption/>} />
+          <Route path='/signup-option' element={ <SignupOption/>} />
+
+          <Route path='/login-individual' element={<LoginIndividual />}/>
+
           <Route path='/' element={<Dashboard />}/>
           <Route path='/score' element={<ScoresMain />}/>
           <Route path='/journal' element={<JournalMain />}/>
