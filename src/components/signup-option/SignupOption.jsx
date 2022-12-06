@@ -12,23 +12,23 @@ const SignupOption = () => {
             <h3 className='pb-10 pt-20'><i class="fa-solid fa-user-plus text-primary pr-2"></i> Sign up Options:</h3>
             <div className='h-60 border flex flex-col justify-center items-center px-10 rounded-lg border-grayBorder'>
                 <div className=''>
-                    <Link to='/login-option'>
+                    <Link to='/signup-individual'>
                         <SignupButton
                         type='Submit'
                         text = 'Sign up as an Individual'
                         color='text-darker'
-                        bgColor= 'bg-grayBorder'
+                        bgColor= 'bg-grayFill'
                         onHoverColor = 'primary'
                         />
                     </Link>
                 </div>
                 <div className='pt-5'>
-                <Link to='/login-option'>
+                <Link to='/signup-company'>
                         <SignupButton
                         type='Submit'
-                        text = 'Sign up as Employee'
+                        text = 'Sign up as Company'
                         color='text-darker'
-                        bgColor= 'bg-grayBorder'
+                        bgColor= 'bg-grayFill'
                         onHoverColor = 'primary'
                         />
                     </Link>

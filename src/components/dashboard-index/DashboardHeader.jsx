@@ -1,4 +1,4 @@
-import Image from '../../images/profile.jpeg';
+import Image from '../../images/profile.png';
 const DashboardHeader = () => {
   return (
     <div className="bg-secondary">
@@ -9,7 +9,7 @@ const DashboardHeader = () => {
           </div>
 
           <div className="profile">
-            <img className='w-10 h-10 rounded-full border-2 border-darker'src={Image} alt='profile'/>
+            <img className='w-10 h-10 rounded-full 'src={Image} alt='profile'/>
           </div>
         </div>
     </div>

@@ -11,7 +11,7 @@ const navNames = [
 ]
 
   return (
-    <div className="sidebar w-[270px] h-screen mt-4 bg-secondary pt-2 px-2 ml-5 rounded-xl">
+    <div className="sidebar w-[270px] h-[85vh] mt-4 bg-secondary pt-2 px-2 ml-5 rounded-xl">
         <ul className="[&>li]:py-4 ">
             {
                 navNames.map((item) =>(

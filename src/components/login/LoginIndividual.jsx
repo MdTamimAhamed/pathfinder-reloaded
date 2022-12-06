@@ -9,7 +9,7 @@ const LoginIndividual = () => {
   return (
     <>
         <div className='w-full h-screen flex flex-col justify-center items-center'>
-            <h3 className='pb-10 pt-20 text-2xl font-bold'>Login</h3>
+            <h3 className='pb-10 pt-20 text-2xl font-bold uppercase'>Login</h3>
             <form className=' h-auto border rounded-lg border-grayBorder'>
                     <div className='px-5 pt-10 py-3'>
                         <label>User name</label>
@@ -31,7 +31,7 @@ const LoginIndividual = () => {
                             placeholder = 'Password'
                         />
                     </div>
-                    <div className='px-5 mt-5 mb-10'>
+                    <div className='px-5 mt-10 mb-10'>
                         <LoginButton
                             type='Submit'
                             text = 'Login as Individual'

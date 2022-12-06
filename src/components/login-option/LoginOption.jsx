@@ -24,7 +24,7 @@ const LoginOption = () => {
                     </Link>
                 </div>
                 <div className='pt-5'>
-                <Link to='/login-option'>
+                <Link to='/login-employee'>
                         <LoginButton
                         type='Submit'
                         text = 'Login as Employee'
@@ -35,7 +35,7 @@ const LoginOption = () => {
                     </Link>
                 </div>
                 <div className='pt-5'>
-                <Link to='/login-option'>
+                <Link to='/login-manager'>
                         <LoginButton
                         type='Submit'
                         text = 'Login as Manager'

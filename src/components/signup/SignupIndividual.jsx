@@ -1,23 +1,34 @@
 import React, { useState } from 'react'
 import InputHandler from '../input-handler/InputHandler'
-import LoginButton from '../reusables/LoginButton';
+import SignupButton from '../reusables/SignupButton';
 
-const LoginManager = () => {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+const SignupIndividual = () => {
+  const[name,setName] = useState('');
+  const[profession,setProfession] = useState('');
+  const[password, setPassword] =  useState('');
   return (
     <>
-        <div className='w-full h-screen flex flex-col justify-center items-center'>
-            <h3 className='pb-10 pt-20 text-2xl font-bold uppercase'>Login</h3>
+      <div className='w-full h-screen flex flex-col justify-center items-center'>
+            <h3 className='pb-10 pt-20 text-2xl font-bold uppercase'>Sign up</h3>
             <form className=' h-auto border rounded-lg border-grayBorder'>
                     <div className='px-5 pt-10 py-3'>
-                        <label>Manager name</label>
+                        <label>User name</label>
                         <InputHandler
-                            state = {username}
-                            setState = {setUsername}
+                            state = {name}
+                            setState = {setName}
                             type ='text'
                             name = 'username'
-                            placeholder = 'Manager name'
+                            placeholder = 'User name'
+                        />
+                    </div>
+                    <div className='px-5 py-3'>
+                        <label>Profession</label>
+                        <InputHandler
+                            state = {profession}
+                            setState = {setProfession}
+                            type ='text'
+                            name = 'profession'
+                            placeholder = 'Profession'
                         />
                     </div>
                     <div className='px-5'>
@@ -31,9 +42,9 @@ const LoginManager = () => {
                         />
                     </div>
                     <div className='px-5 mt-10 mb-10'>
-                        <LoginButton
+                        <SignupButton
                             type='Submit'
-                            text = 'Login as Manager'
+                            text = 'Sign up as Individual'
                             color='text-white'
                             bgColor= 'bg-primary'
                             onHoverColor = 'bg-primaryShade'
@@ -45,4 +56,4 @@ const LoginManager = () => {
   )
 }
 
-export default LoginManager
+export default SignupIndividual
